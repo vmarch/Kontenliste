@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.devtolife.kontenliste.R
 import com.devtolife.kontenliste.model.Account
 import java.io.Serializable
-
+/**
+ * Created by Volodymyr Marchenko on 19.02.2022.
+ */
 class CustomRecyclerViewAdapter :
     RecyclerView.Adapter<CustomRecyclerViewAdapter.CustomViewHolder>() {
 

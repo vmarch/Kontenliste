@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.devtolife.kontenliste.R
 import com.devtolife.kontenliste.model.Account
 import com.google.android.material.button.MaterialButton
-
+/**
+ * Created by Volodymyr Marchenko on 21.02.2022.
+ */
 class AccountDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

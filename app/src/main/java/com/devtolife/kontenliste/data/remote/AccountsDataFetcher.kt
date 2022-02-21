@@ -6,6 +6,11 @@ import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * Created by Volodymyr Marchenko on 19.02.2022.
+ *
+ * Use BASE_URL2 if BASE_URL is blocked after reaching the limit of 50 connections
+ */
 private const val BASE_URL = "https://bankingapi.free.beeceptor.com"
 private const val BASE_URL2 = "https://bankingapipro.free.beeceptor.com"
 
