@@ -2,7 +2,6 @@ package com.devtolife.kontenliste.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -34,11 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         myViewModel.loadAccountsList()
 
-        myViewModel.accountsList.observe(this, Observer { dataList ->
+        myViewModel.accountsList.observe(this) { dataList ->
             dataList?.let {
                 accountsList = it
                 customRecyclerViewAdapter.setList(accountsList)
             }
-        })
+        }
     }
 }

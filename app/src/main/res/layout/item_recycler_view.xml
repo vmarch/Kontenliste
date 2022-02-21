@@ -21,7 +21,7 @@
             android:id="@+id/textViewOwnerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Trweghgsdg Hsdkfhjkhsdfjk"
+            android:text=""
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -37,15 +37,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingEnd="8dp"
-                android:text="Sparkonto"
+                android:text=""
                 android:textColor="#010122" />
 
             <TextView
                 android:id="@+id/textViewBalance"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:text="12344534534 EUR"
+                android:text=""
                 android:textColor="#010122" />
         </LinearLayout>
 
@@ -60,14 +60,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingEnd="8dp"
-                android:text="IBAN:"
+                android:text="@string/iban"
                 android:textColor="#010122" />
 
             <TextView
                 android:id="@+id/textViewIbanValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DE108575746465"
+                android:text=""
                 android:textColor="#010122" />
         </LinearLayout>
     </LinearLayout>

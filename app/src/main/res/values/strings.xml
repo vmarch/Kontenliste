@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Kontenliste</string>
+    <string name="firstname">Firstname:</string>
+    <string name="surname">Surname:</string>
+    <string name="account">Account:</string>
+    <string name="currency">Currency:</string>
+    <string name="balance">Balance:</string>
+    <string name="iban">IBAN:</string>
+    <string name="back_button_text">Back</string>
 </resources>
