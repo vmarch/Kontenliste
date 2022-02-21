@@ -1,5 +1,7 @@
 package com.devtolife.kontenliste.model
 
+import java.io.Serializable
+
 /*
 Create Data Class from:
 {
@@ -20,5 +22,5 @@ data class Account(
     val accountName: String,
     val balance: String,
     val currency: String,
-    val iban: String
-)
+    val iban: String,
+) : Serializable

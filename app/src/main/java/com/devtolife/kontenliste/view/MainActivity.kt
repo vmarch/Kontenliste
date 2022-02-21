@@ -1,6 +1,8 @@
 package com.devtolife.kontenliste.view
 
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var myViewModel: AccountViewModel
     private var accountsList: List<Account> = emptyList()
 
-    private  lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
     private lateinit var customRecyclerViewAdapter: CustomRecyclerViewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,5 +39,16 @@ class MainActivity : AppCompatActivity() {
                 customRecyclerViewAdapter.setList(accountsList)
             }
         })
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+
+        // Checks the orientation of the screen
+        if (newConfig.orientation === Configuration.ORIENTATION_LANDSCAPE) {
+            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show()
+        } else if (newConfig.orientation === Configuration.ORIENTATION_PORTRAIT) {
+            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show()
+        }
     }
 }

@@ -7,6 +7,7 @@ import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
 private const val BASE_URL = "https://bankingapi.free.beeceptor.com"
+private const val BASE_URL2 = "https://bankingapipro.free.beeceptor.com"
 
 object AccountsDataFetcher {
 
@@ -18,7 +19,7 @@ object AccountsDataFetcher {
     suspend fun getAccounts(): List<Account> {
 
         retrofitInstance = Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BASE_URL2)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -33,5 +34,4 @@ object AccountsDataFetcher {
 
         return listOfAccounts
     }
-
 }
